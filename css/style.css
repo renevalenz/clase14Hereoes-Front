@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+
+
+}
+
+/* ///////////////////////// Header ////////////////////// */
+
+header h2 {
+    background-color: #1CD1B0;
+    margin: 0;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+header h1 {
+    background-color: #00669F;
+    margin: 0;
+    padding: 30px 20px;
+    font-weight: 400;
+    font-size: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.442);
+    font-weight: 600;
+    color: white;
+
+}
+
+/* ///////////////////////// Main /////////////////// */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 150px 20px;
+
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+
+    margin: 20px;
+    width: 300px;
+    height: 629px;
+    background-image: url(../img/fondo1.png);
+    background-size: 300px 194px;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.442);
+    position: relative;
+
+}
+
+.like {
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.card2 {
+    background-image: url(../img/fondowonder.png)
+}
+
+.card3 {
+    background-image: url(../img/fondo-super.png)
+}
+
+.card4 {
+    background-image: url(../img/fondo2.png)
+}
+
+.heroe {
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 85px;
+    width: 40%;
+
+}
+
+
+.texto-card {
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    padding: 20px;
+
+}
+
+.btncard {
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #00669F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+
+}
+
+
+.flotante {
+   
+    background-color: #00669F;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    font-size: 30px;
+   width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    top: 400px;
+    
+    
+
+
+
+}
+
+
+
+/* /////////////////////// Footer //////////////////// */
+.footer-container {
+    align-items: center;
+    background-color: #00669F;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    flex-grow: 1;
+}
+
+footer img {
+    max-width: 5%;
+}
+
+/* ///////////Media///////////// */
+
+@media (max-width: 480px) {
+    .card4 {
+        display: none;
+    }
+
+
+    footer h3 {
+
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1058px) {
+    .cards {
+        margin: 40px 0;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        margin: 30px;
+    }
+
+    footer img {
+        max-width: 10%;
+
+    }
+
+}
